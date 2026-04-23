@@ -2,13 +2,13 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { designerService, requestService, platformService } from '../services/api';
 
-// 使用picsum.photos作为图片源，确保图片能够显示
-const design1 = 'https://picsum.photos/seed/design1/600/400';
-const design2 = 'https://picsum.photos/seed/design2/600/400';
-const design3 = 'https://picsum.photos/seed/design3/600/400';
-const collab1 = 'https://picsum.photos/seed/collab1/600/400';
-const collab2 = 'https://picsum.photos/seed/collab2/600/400';
-const collab3 = 'https://picsum.photos/seed/collab3/600/400';
+// 使用本地图片
+const design1 = '/images/design1.jpg';
+const design2 = '/images/design2.jpg';
+const design3 = '/images/design3.jpg';
+const collab1 = '/images/collab1.jpg';
+const collab2 = '/images/collab2.jpg';
+const collab3 = '/images/collab3.jpg';
 
 const Home = () => {
   const [stats, setStats] = useState([
